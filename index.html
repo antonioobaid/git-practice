@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturang</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0; 
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px ;
+            height: 90px;
+            width: 100%;
+            background-color: black;
+            position: fixed;
+            z-index: 999;
+        }
+        header a {
+             color: white;
+             font-size: 40px;
+             font-weight: 900;
+             margin-left: 120px;
+             text-decoration: none;
+             
+            }
+        header a:hover{
+                color: rgb(173, 32, 201);
+            }
+        .navigation a {
+            margin:20px 90px;
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .navigation a:hover{
+            color: rgb(148, 58, 158);
+        }
+        section {
+            padding: 200px 60px;
+            width: 100%;
+            background-color: rgb(195, 133, 19);
+        }
+        .main-items a {
+            color: black;
+            text-decoration: none;
+            font-size: 2em;
+            font-family: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 35px 70px 35px 0 ;
+            padding: 20px;
+        }
+        .main-items a:hover {
+            color: greenyellow;
+        }
+        .adress-och-öppettider{
+            color: white;
+            padding-left: 520px;  
+        }
+        .adress span {
+            margin-left: 120px;
+            margin-top: 40px;
+            
+        }
+        .adress-och-öppettider p {
+            margin-left: 120px;
+            margin-bottom: 10px;
+        }
+        .öppettider {
+            margin-top: 40px;
+        }
+        .Laolita-image {
+            padding: 70px;
+        }
+        .Nyheter {
+            padding-left: 70px;
+            width: 100%;
+        }
+        .title1{
+            font-size: 2.5em;
+        }
+        .line{
+            margin: 0 250px 0 0;
+        }
+        .ventilation {
+            margin: 7px 0;
+            font-size: 1.6em;
+            font-weight: 500;
+        }
+        .time {
+            font-size: 0.9em;
+            font-weight: 80;
+            margin-bottom: 25px;
+        }
+        .paragraph{
+            width: 800px;
+            font-size: 1em;
+            font-weight: 60;
+        }
+        .öppning {
+            padding-left: 70px;
+            width: 100%;
+        }
+        .öppning-tid {
+            margin-top: 40px;
+            font-size: 1.6em;
+            font-weight: 500;
+        }
+        .stängning-tid{
+           font-size: 0.9em;
+           font-weight: 80;
+           margin-top: 15px;
+        }
+        .gäster {
+            font-size: 1.1em;
+            font-weight: 120;
+            margin-top: 15px;
+        }
+        .text {
+            width: 800px;
+            font-size: 1em;
+            font-weight: 60;
+            margin-top: 20px;
+        }
+        footer {
+            width: 100%;
+            background-color: rgb(46, 43, 43);
+            height: 400px;
+            display: flex;
+            padding: 50px 120px;
+            color: white;
+            
+        }
+        .title-footer{
+            margin-bottom: 25px;
+        }
+        .adress-footer{
+            margin-bottom: 15px;
+        }
+        .adress-footer{
+            margin-bottom: 20px;
+        }
+        .content-footer p {
+            margin-bottom: 10px;
+        }
+        .boka-bord-footer{
+            text-decoration: none;
+            display: flex;
+            margin-top: 30px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+        .boka-bord-footer:hover{
+            color: greenyellow;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <header id="Header">      
+            <a href="./index.html" class="title"> La Olita</a>
+            <nav class="navigation"> 
+                    <a href="./om-oss.html" class="om-oss" alt="om-oss">Om oss</a>
+                    <a href="./resturang.html" class="Meny" alt="Meny">Meny</a>
+                    <a href="./boka-bord.html" class="Boka-bord" alt="boka-bord">Boka bord</a>       
+            </nav>
+    </header>
+    <section class="main">
+        <nav class="main-items">
+                <a href="./om-oss.html" class="om-oss1" alt="om-oss">Om oss</a>
+                <a href="./resturang.html" class="Meny1" alt="Meny">Meny</a>
+                <a href="./boka-bord.html" class="Boka-bord1" alt="boka-bord">Boka bord</a>
+        </nav>
+        <div class="adress-och-öppettider">
+            <h3 class="adress"> Restaurang La Olita hittar du på Skånegatan 87. <br> <br><span>Våra öppettider är:</span></h3>
+            <p class="öppettider"> Månd-torsdag: 17-21 </p>
+            <p> fredag: 17-01 </p>
+            <p> Lördag: 17-01 </p>
+            <p> Söndag: 17-21</p>    
+        </div>
+        <div class="Laolita-image">
+            <img src="./banner_restaurang.jpg" alt="laolita-image" style="width: 1200px; height: 800px;">
+        </div>
+        <div class="Nyheter">
+           <h1 class="title1"> Nyheter</h1><br>
+           <hr class="line">
+           <h2 class="ventilation">Ny ventilation och öppning 27 jan</h2>
+           <h4 class="time"><i>13 januari, 2023</i></h4>
+           <p class="paragraph">Nu har vi satt in ny ventilation i hela restaurangen och slår upp dörrarna på nytt fredag den 27 januari 2023.
+            Välkomna!</p>
+        </div>
+        <div class="öppning">
+          <h2 class="öppning-tid">Öppning den 4 febr</h2>
+          <h4 class="stängning-tid"> 30 januari, 2022</h4>
+          <h3 class="gäster">Hej kära gäster!</h3>
+          <p class="text">Efter lite renovering och en inspirationsresa till Mexico är vi nu tillbaka och öppnar bordsbokningen igen till Stockholms bästa Mexikanare.
+            Nu på fredag 4 feb öppnar vi kl 17.00 <br>
+            Boka bord gör du genom att surfa in på fliken ”boka bord” och trycka på bokningsknappen ”Boka bord här!”. </p>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content-footer">
+            <h2 class="title-footer">RESTAURANG LA OLITA</h2>
+           <h3 class="adress-footer">Skånegatan 87, Stockholm <br>
+            Öppettider: </h3>
+                <p> Månd-torsdag: 17-21</p>  
+                <p>Fredag: 17-01</p>
+                <p>Lördag: 17-01</p>
+                <p>Söndag: 17-21</p>  
+                <a href="./boka-bord.html" class="boka-bord-footer">Klicka här för att boka bord</a> 
+        </div>
+    </footer>
+
+</body>
+</html>

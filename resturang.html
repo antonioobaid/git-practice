@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0; 
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px ;
+            height: 90px;
+            width: 100%;
+            background-color: black;
+            position: fixed;
+            z-index: 999;
+        }
+        header a {
+             color: white;
+             font-size: 40px;
+             font-weight: 900;
+             margin-left: 120px;
+             text-decoration: none;
+             
+            }
+        header a:hover{
+                color: rgb(173, 32, 201);
+            }
+        .navigation a {
+            margin:20px 90px;
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .navigation a:hover{
+            color: rgb(148, 58, 158);
+        }
+        section{
+            padding: 160px 130px;
+            background-color: orange;
+            width: 100%;
+            min-height: 500px;
+            border: 1px solid black;
+        }
+        .resturang-meny{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="Header">      
+        <a href="./index.html" class="title"> La Olita</a>
+        <nav class="navigation"> 
+                <a href="./om-oss.html" class="om-oss" alt="om-oss">Om oss</a>
+                <a href="./resturang.html" class="Meny" alt="Meny">Meny</a>
+                <a href="./boka-bord.html" class="Boka-bord" alt="boka-bord">Boka bord</a>       
+        </nav>
+</header>
+ <section class="meny">
+    <div class="meny-rätter">
+        <h1 class="resturang-meny">Resturang / Meny</h1><br>
+        <hr class="line">
+
+    </div>
+ </section>
+</body>
+</html>

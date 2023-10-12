@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0; 
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px ;
+        height: 90px;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        z-index: 999;
+    }
+    header a {
+         color: white;
+         font-size: 40px;
+         font-weight: 900;
+         margin-left: 120px;
+         text-decoration: none;
+         
+        }
+    header a:hover{
+            color: rgb(173, 32, 201);
+        }
+    .navigation a {
+        margin:20px 90px;
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .navigation a:hover{
+        color: rgb(148, 58, 158);
+    }
+    section {
+        padding: 160px 130px;
+        background-color: orange;
+    }
+    section div{
+        color: black;
+        min-height: 100vh;
+        font-size: 1.4rem;
+        font-weight: 700; 
+    }
+    hr {
+        margin: 10px 0 30px 0;
+        width: 1250px;
+    }
+    div p{
+        width: 450px;
+    }
+    .information{
+        margin-top: 20px;
+        font-size: 1rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+        
+    }
+    .information1{
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 30px;
+        letter-spacing: 1px;
+    }
+
+
+    </style> 
+</head>
+<body>
+    <header id="Header">      
+        <a href="./index.html" class="title"> La Olita</a>
+        <nav class="navigation"> 
+                <a href="./om-oss.html" class="om-oss" alt="om-oss">Om oss</a>
+                <a href="./resturang.html" class="Meny" alt="Meny">Meny</a>
+                <a href="./boka-bord.html" class="Boka-bord" alt="boka-bord">Boka bord</a>       
+        </nav>
+</header>
+<section class="boka-bord">
+    <div>
+        <h1 class="Rubrik">Boka bord</h1>
+        <hr>
+        <p class="information">OBS! Bokade bord gäller middagstid inomhus – ute och lunchtid är det först till kvarn som gäller.
+            Finns det plats så ordnar vi det såklart vid ankomst. <br>
+            Även inne middagstid försöker vi att hålla bord lediga för drop - in.</p>
+        <p class="information1">Bokning ska göras genom bokningsknappen. För övriga frågor ring oss på telefonnumret nedan.</p> <br>
+        <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" placeholder="skriv ditt name" required><br><br>
+
+            <label for="people">Antal personer:</label>
+            <input type="number" id="people" name="people" placeholder="antal personer" required><br><br>
+
+            <label for="date">Datum:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="time">Tid:</label>
+            <input type="time" id="time" name="time" required><br><br>
+
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" rows="2" required></textarea><br><br>
+
+            <input type="reset" value="Återställ">
+            <input type="submit" value="Skicka bokningsförfrågan">
+    </div>
+</section>
+</body>
+</html>
